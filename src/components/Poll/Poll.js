@@ -7,7 +7,9 @@ const Poll = () => {
   const Rehydrate = async () => {
     const results = await fetch(chatWantUrl);
     const json = await results.json();
-    json.sort((a, b) => (parseInt(a.votes) > parseInt(b.votes) ? true : false));
+    json.sort((a, b) =>
+      parseInt(a.uniqueVotes) > parseInt(b.uniqueVotes) ? -1 : 1
+    );
     updateItems(json);
   };
 
@@ -18,10 +20,10 @@ const Poll = () => {
 
   return (
     <List>
-      {items.map(({ name, votes }) => {
+      {items.map(({ item, totalVotes, uniqueVotes }) => {
         return (
           <ListItem>
-            {votes} people want a {name}
+            {item} : {uniqueVotes} unique votes and {totalVotes} total votes
           </ListItem>
         );
       })}
