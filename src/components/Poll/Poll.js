@@ -13,6 +13,7 @@ const Poll = () => {
 
   useEffect(() => {
     setInterval(Rehydrate, 15000);
+    Rehydrate();
   }, []);
 
   return (
