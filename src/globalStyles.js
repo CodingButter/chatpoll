@@ -21,7 +21,7 @@ export const Header = styled.p`
   margin: 20px;
   font-size: 7vw;
   text-align: center;
-  color: white;
+  color: black;
   @media screen and (max-width: 800px) {
     font-size: 10vw;
   }

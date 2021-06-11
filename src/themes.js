@@ -32,19 +32,19 @@ const BaseTheme = {
   },
   palette: {
     primary: {
-      lighter: "#63365b",
-      main: "#351d31",
-      darker: "#10090f",
+      lighter: "#556474",
+      main: "#F2F2F2",
+      darker: "#164475",
     },
     secondary: {
-      lighter: "#f88c87",
-      main: "#f55951",
-      darker: "#f23026",
+      lighter: "#C4B4BF",
+      main: "#A3B4BF",
+      darker: "#8297A1",
     },
     accent: {
       one: "#edd2cb",
-      two: "#f1e8e6",
-      three: "#543c52",
+      two: "#A3B4BF",
+      three: "#A3B4BF",
     },
   },
 };
