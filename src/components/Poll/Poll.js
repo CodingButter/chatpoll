@@ -1,6 +1,6 @@
 import { List, ListItem, Button } from "./Poll.elements";
 import React, { useEffect, useState } from "react";
-const chatWantUrl = "https://chatstyler.tk/crud/read/wants";
+const chatWantUrl = "https://chatstyler.tk/crud/read/wants/7days";
 const Poll = () => {
   const [items, updateItems] = useState([]);
   const [voteToggle, toggleVotes] = useState(false);
