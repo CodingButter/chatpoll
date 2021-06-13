@@ -2,13 +2,13 @@ import { List, ListItem, Button } from "./Poll.elements";
 import React, { useEffect, useState } from "react";
 const chatWantUrl = "https://chatstyler.tk/crud/read/wants";
 const Poll = () => {
-  const [items, updateItems] = useState([]);
+  var [items, updateItems] = useState([]);
   const [voteToggle, toggleVotes] = useState(false);
 
   const handleVoteToggle = () => {
     toggleVotes(!voteToggle);
   };
-
+  items = [...items, ...items, ...items, ...items];
   const Rehydrate = async () => {
     const results = await fetch(chatWantUrl);
     const json = await results.json();
