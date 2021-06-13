@@ -38,3 +38,12 @@ export const ListItem = styled.li`
 `;
 
 export const ListItemContent = styled.p``;
+
+export const Button = styled.button`
+  color: #fff;
+  width: 350px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 4px;
+  background: #555555;
+`;
